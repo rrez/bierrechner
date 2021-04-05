@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/bierrechner",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
