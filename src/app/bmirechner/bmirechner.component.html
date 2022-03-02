@@ -1,0 +1,14 @@
+<form [formGroup]="bmiForm">
+    <mat-form-field class="example-full-width">
+        <mat-label>Wie Fett bist du</mat-label>
+
+
+        <input inputmode="numeric" formControlName="weight" matInput placeholder="Gewicht in Tonnen" value="">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+        <mat-label>Größe in cm</mat-label>
+        <input inputmode="numeric" formControlName="height" matInput placeholder="Riese oder Zwerg">
+    </mat-form-field>
+    {{answer}}
+</form>

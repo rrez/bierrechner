@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TestComponent implements OnInit {
   myoutput = this.myCalc();
+
+  progressval = 99;
+
+
+
   constructor() { }
 
   ngOnInit(): void {
@@ -42,12 +47,10 @@ export class TestComponent implements OnInit {
       return returnString;
     }
 
-
-
-    const oneDay = 24 * 60 * 60 * 1000,
-      firstDate: any = new Date(),
-      secondDate: any = new Date("2021-05-23T18:00:00.000Z"),
-      startDate: any = new Date("2021-02-16T23:30:00.000Z");
+    const oneDay = 24 * 60 * 60 * 1000;
+    const firstDate: any = new Date();
+    const secondDate: any = new Date("2022-04-16T18:00:00.000Z");
+    const startDate: any = new Date("2022-03-01T22:00:00.000Z");
 
     const diffDaysStart = (firstDate.getTime() - startDate.getTime()) / 1000;
 
@@ -66,7 +69,7 @@ export class TestComponent implements OnInit {
 
 
     const repeatSymbol = (times, breakStart?) => {
-      const devider = 2;
+      const devider = 0.7;
       times = times / devider;
 
       let ret = '';
@@ -105,7 +108,7 @@ export class TestComponent implements OnInit {
 
 
 
-    return `${ret}||${startGraph}🍺${endGraph}|`;
+    return `${ret}|${startGraph}🍺${endGraph}|`;
     //document.write(`| 0${spaces(38)}${totalDays/2}${spaces(38)}${totalDays} |<br/>`);
   }
 
