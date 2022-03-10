@@ -37,7 +37,7 @@ export class TestComponent implements OnInit {
       if (minutes < 10) {
         minutesString = "0" + minutes;
       }
-      returnString = "*" + hoursString + "* Stunden *" + minutesString + "* Minuten";
+      returnString = "" + hoursString + " Stunden " + minutesString + " Minuten";
       if (hideEmpty) {
         if (hours === 0) {
           returnString = minutesString + "m";
@@ -69,7 +69,7 @@ export class TestComponent implements OnInit {
 
 
     const repeatSymbol = (times, breakStart?) => {
-      const devider = 0.7;
+      const devider = 1;
       times = times / devider;
 
       let ret = '';
